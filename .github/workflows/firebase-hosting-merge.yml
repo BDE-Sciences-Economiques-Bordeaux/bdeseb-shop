@@ -15,6 +15,7 @@ jobs:
         with:
           flutter-version: "3.10.0"
           channel: "stable"
+      - run: curl -sL https://firebase.tools | bash
       - run: flutter pub get
       - run: dart pub global activate flutterfire_cli
       - run: flutterfire configure -y --platforms="web" --ios-bundle-id="" --macos-bundle-id="" -p bdeseb-shop -e arthur.richard2299@gmail.com
