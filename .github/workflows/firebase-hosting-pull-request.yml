@@ -16,7 +16,7 @@ jobs:
       - run: curl -sL https://firebase.tools | bash
       - run: flutter pub get
       - run: dart pub global activate flutterfire_cli
-      - run: flutterfire configure -y --platforms="web" --ios-bundle-id="" --macos-bundle-id="" -p "bdeseb-shop" -e "arthur.richard2299@gmail.com" --token="$FIREBASE_TOKEN"
+      - run: flutterfire configure -y --platforms="web" --ios-bundle-id="" --macos-bundle-id="" -p "bdeseb-shop" --token="$FIREBASE_TOKEN"
       - run: flutter build web
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
